@@ -1,60 +1,69 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-app id="inspire">
+        <Nav ref="nav"></Nav>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+        <v-app-bar
+                app
+                color="black"
+                dark
+        >
+            <v-row>
+                <v-col>
+                    <v-app-bar-nav-icon @click.stop="navButtonClicked"/>
+                </v-col>
+                <v-col>
+                    <v-toolbar-title class="pt-2 text-center">CF</v-toolbar-title>
+                </v-col>
+                <v-col align="end">
+<!--                    <v-icon class="pt-3 pr-1" @click="navButtonClicked">-->
+<!--                        mdi-comment-outline-->
+<!--                    </v-icon>-->
+                </v-col>
+            </v-row>
+        </v-app-bar>
 
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+        <v-content>
+            <router-view></router-view>
+        </v-content>
+        <v-footer
+                color="black"
+                app
+                dark
+                class="pa-0"
+        >
+            <v-row class="ma-0">
+                <v-col justify="start">
+                    &copy; 2020
+                </v-col>
+                <v-col justify="end" class="text-end">
+                    <a style="text-decoration: none"
+                       class="white--text"
+                       href="https://github.com/franklinCarson/portfolio"
+                       target="_blank"
+                    >
+                        Github
+                    </a>
+                </v-col>
+            </v-row>
+        </v-footer>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+    import Nav from "./components/Nav";
 
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
+    export default {
+        components: {
+            Nav,
+        },
+        props: {
+            source: String,
+        },
+        data: () => ({}),
+        methods: {
+            navButtonClicked: function () {
+                this.$refs.nav.toggleDrawer()
+            }
+        }
+    }
 </script>
