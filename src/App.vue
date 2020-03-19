@@ -38,7 +38,7 @@
                 <v-col justify="end" class="text-end">
                     <a style="text-decoration: none"
                        class="white--text"
-                       href="https://github.com/franklinCarson/portfolio"
+                       href="https://github.com/franklinCarson/portfolio/tree/feature/vue"
                        target="_blank"
                     >
                         Github
