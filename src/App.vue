@@ -15,45 +15,30 @@
                     <v-toolbar-title class="pt-2 text-center">CF</v-toolbar-title>
                 </v-col>
                 <v-col align="end">
-<!--                    <v-icon class="pt-3 pr-1" @click="navButtonClicked">-->
-<!--                        mdi-comment-outline-->
-<!--                    </v-icon>-->
+                    <v-icon class="pt-3 pr-1" @click="contactButtonClicked">
+                        mdi-comment-outline
+                    </v-icon>
                 </v-col>
             </v-row>
         </v-app-bar>
 
         <v-content>
             <router-view></router-view>
+            <Contact ref="contact"/>
         </v-content>
-        <v-footer
-                color="black"
-                app
-                dark
-                class="pa-0"
-        >
-            <v-row class="ma-0">
-                <v-col justify="start">
-                    &copy; 2020
-                </v-col>
-                <v-col justify="end" class="text-end">
-                    <a style="text-decoration: none"
-                       class="white--text"
-                       href="https://github.com/franklinCarson/portfolio/tree/feature/vue"
-                       target="_blank"
-                    >
-                        Github
-                    </a>
-                </v-col>
-            </v-row>
-        </v-footer>
+        <Footer/>
     </v-app>
 </template>
 
 <script>
     import Nav from "./components/Nav";
+    import Footer from "./components/Footer";
+    import Contact from "./components/Contact";
 
     export default {
         components: {
+            Contact,
+            Footer,
             Nav,
         },
         props: {
@@ -63,6 +48,9 @@
         methods: {
             navButtonClicked: function () {
                 this.$refs.nav.toggleDrawer()
+            },
+            contactButtonClicked: function () {
+                this.$refs.contact.toggleShown()
             }
         }
     }
