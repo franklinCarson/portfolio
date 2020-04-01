@@ -34,7 +34,7 @@ Why Apple?
             dark
             class="mt-10"
         >
-            <v-row class="text-center pa-10">
+            <v-row class="text-center pa-10" align="center">
                 <v-col class="text-start">
                     <span class="display-2">
                         The Dream

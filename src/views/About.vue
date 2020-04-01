@@ -1,15 +1,17 @@
 <template>
     <v-container>
-        <Title_Desktop/>
-        <Family_Dekstop/>
-        <MountainBiking_Desktop/>
+        <div v-if="$vuetify.breakpoint.xs">
+            <About_Mobile/>
+        </div>
+        <div v-else>
+            <About_Desktop/>
+        </div>
     </v-container>
 </template>
 <script>
-    import Title_Desktop from "../components/about/Title_Desktop";
-    import Family_Dekstop from "../components/about/Family_Dekstop";
-    import MountainBiking_Desktop from "../components/about/MountainBiking_Desktop";
+    import About_Mobile from "../components/about/About_Mobile";
+    import About_Desktop from "../components/about/About_Desktop";
     export default {
-        components: {MountainBiking_Desktop, Family_Dekstop, Title_Desktop}
+        components: {About_Desktop, About_Mobile}
     }
 </script>
