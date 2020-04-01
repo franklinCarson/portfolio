@@ -1,15 +1,7 @@
 <template>
-<!--
-Why Apple?
 
-- I want to be apart of the Apple Vision.
-      - “They’re in a billion pockets, y’all. A billion pockets.”
-      - Ability to have impact on a billion peoples' lives in a positive way.
-- I want to be consistently challenged to be my best.
-
--->
-    <v-container fluid
-                 color="black"
+    <v-container
+            fluid
     >
         <v-card
             color="black"
@@ -43,7 +35,7 @@ Why Apple?
                         Ever since I was little I have owned Apple products. I loved the simplicity of the product and the intuitiveness of the user interface. Every time I used an Apple product it was <span class="font-weight-bold">delightful</span>. Through the iPod, I first fell in love with stories. Through the iPad, I taught people about Jesus Christ, during a 2 year religious mission for my church. And through the MacBook Pro, I discovered my passion for <span style="font-family: Courier; color: #bf4800" class="font-weight-bold">coding</span>.
                     </p>
                     <p>
-                        Each experience with these beautiful products and services <span class="font-weight-bold">enriched my life</span> and changed it for the better. With each increase in quality began the formation of a <span class="font-weight-bold">dream</span>. A dream to be apart of <span class="font-weight-bold">helping others</span> to feel these same kinds of experiences.
+                        Each experience with these beautiful products and services <span class="font-weight-bold">enriched my life</span> and changed it for the better. With each increase in quality began the formation of a <span class="font-weight-bold">dream</span>. A dream to be part of <span class="font-weight-bold">helping others</span> to feel these same kinds of experiences.
                     </p>
                 </v-col>
                 <v-col>
@@ -74,7 +66,7 @@ Why Apple?
                       Vision
                     </span>
                     <p>
-                        Apple has always been dedicated to meshing great products with amazing services, to provide the most positive impact in peoples’ lives. As Oprah has said, “They’re in a billion pockets, y’all. A billion pockets.” A billion lives are being enriched every day because of what Apple is doing. I have been one of those lives and now I want to be apart of helping others have the same experiences.
+                        Apple has always been dedicated to meshing great products with amazing services to provide the most positive impact in peoples’ lives. As Oprah said, “They’re in a billion pockets, y’all. A billion pockets.” <span class="font-weight-bold">A billion lives are being enriched every day because of what Apple is doing.</span> I have been one of those lives and now I want to be part of helping others have the same experiences.
                     </p>
                 </v-col>
 
@@ -93,10 +85,10 @@ Why Apple?
                       Hard Work
                     </span>
                     <p>
-                        Accomplishing Apple’s vision is not easy. Like everything else worthwhile in life it takes extreme amounts of hard work. I am someone who has not only come to accept hard work but to crave it. When I was eight I was diagnosed with Tactile Dyslexia. Although I was told by many that it was impossible for me to succeed, due to my “learning disability,” I decided it wasn’t going to get in my way. I knew other kids may be, innately, more smart than me, but I knew I could outwork them.
+                        Accomplishing Apple’s vision is not easy. Like everything else worthwhile in life it takes extreme amounts of hard work. I am someone who has not only come to accept hard work but to crave it. When I was eight, I was diagnosed with Tactile Dyslexia. Although I was told by many that it was impossible for me to succeed as well as others due to my “learning disability,” I decided it wasn’t going to get in my way. I knew other kids may be more innately smarter than me, but I knew that I could outwork them.
                     </p>
                     <p>
-                        I struggled early in my education, especially with learning to read. When I was ten my parents bought me an iPod Shuffle and loaded it with five audiobooks. I listened and relistened to those audiobooks. From listening to them I began to succeed at reading, from there math, and from there science. I went on to take several AP classes in high school, achieving an outstanding GPA at my first university. I then transferred to BYU to achieve higher academic ambitions. Dyslexia has become a blessing, one that has taught me to love hard work. Nothing gives me a greater sense of fulfillment. Apple works hard and I want to be apart of that.
+                        I struggled early in my education, especially with learning to read. In an effort to help, my parents bought me an iPod Shuffle and loaded it with audiobooks. I listened and relistened to those audiobooks. I noticed after a couple of months of doing this how my ability to understand what I was reading and hearing in class increased. My vocabulary also increased, and this enabled me to better articulate questions in class. Each of these gave me an increase in confidence and I began to earn better and better grades. I went on to take several college-level classes in high school and went on to succeed at an exceptional university BYU. Dyslexia has become a blessing, one that has taught me to love hard work. Nothing gives me a greater sense of fulfillment. <span class="font-weight-bold">Apple works hard, and I want to be part of that.</span>
                     </p>
                 </v-col>
                 <v-col v-if="$vuetify.breakpoint.smAndUp">

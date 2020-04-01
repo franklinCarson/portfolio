@@ -1,6 +1,6 @@
 <template>
     <v-row align="center">
-        <v-col class="" >
+        <v-col>
             <v-row justify="center">
                 <v-img
                         src="@/assets/images/profileDesktop.png"
