@@ -37,6 +37,11 @@
                     icon: "mdi-math-compass",
                     linkTo: "/skills"
                 },
+                {
+                    text: "Why Apple",
+                    icon: "mdi-apple",
+                    linkTo: "/whyapple"
+                },
             ]
         }),
         methods: {

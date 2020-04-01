@@ -47,13 +47,18 @@
                 },
                 {
                     icon: "fab fa-php",
-                    title: "PHP",
+                    title: " ",
                     text: "I am uniquely adept at PHP. It is a language I have spent a lot of time with, because one of the API's I worked on was implemented in the language. It may have, historically, a bad reputation, but I came to appreciate the language in many ways."
                 },
                 {
                     icon: "fas fa-database",
-                    title: "SQL | PostgreSQL | DB Design",
+                    title: "SQL & DB Design",
                     text: "When designing an application, I have had the opportunity to be involved in every process of the app development, including the database design. I had the great experience of designing from scratch an efficient accounting database run on PostgreSQL."
+                },
+                {
+                    icon: "fab fa-aws",
+                    title: "",
+                    text: "During my experience with work and school I've frequently used services from AWS. I am familiar with many of their products including OpsWorks, RDS, S3, Route53, EC2, Lambda, and Dynamo DB."
                 },
             ]
         })
