@@ -52,6 +52,12 @@ export default {
         text: "I will graduate from Brigham Young University with a Bachelor's of Science in Computers Science in December of 2020.",
         viewLink: "/education"
       },
+      {
+        icon: "mdi-apple",
+        title: "Why Apple?",
+        text: "It has always been my dream to work at Apple. Find out why.",
+        viewLink: "/whyapple"
+      },
     ]
   }),
 }
