@@ -38,7 +38,7 @@
                     linkTo: "/skills"
                 },
                 {
-                    text: "Why Apple",
+                    text: "Why Apple?",
                     icon: "mdi-apple",
                     linkTo: "/whyapple"
                 },
