@@ -1,6 +1,6 @@
 <template>
     <v-footer
-            color="black"
+            color="black lighten-2"
             app
             dark
             class="pa-0"
@@ -12,10 +12,18 @@
             <v-col justify="end" class="text-end">
                 <a style="text-decoration: none"
                    class="white--text"
-                   href="https://github.com/franklinCarson/portfolio/tree/feature/vue"
+                   href="https://github.com/franklinCarson"
                    target="_blank"
                 >
                     Github
+                </a>
+                |
+                <a style="text-decoration: none"
+                   class="white--text"
+                   href="https://gitlab.com/franklin_carson"
+                   target="_blank"
+                >
+                    GitLab
                 </a>
             </v-col>
         </v-row>

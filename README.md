@@ -1,4 +1,5 @@
 # portfolio
+This is a website where I can show my skills as a computer programmer to those who would be interested in employing me.
 
 ## Project setup
 ```

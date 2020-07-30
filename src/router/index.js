@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Skills from "../views/Skills";
+// import Skills from "../views/Skills";
 import About from "../views/About"
 import WhyApple from "../views/WhyApple";
+import Experience from "../views/Experience";
 
 Vue.use(VueRouter)
 
@@ -19,15 +20,20 @@ const routes = [
     component: About
   },
   {
-    path: '/skills',
-    name: 'Skills',
-    component: Skills
+    path: '/experience',
+    name: 'Experience',
+    component: Experience
   },
+  // {
+  //   path: '/skills',
+  //   name: 'Skills',
+  //   component: Skills
+  // },
   {
     path: '/whyapple',
     name: 'WhyApple',
     component: WhyApple
-  }
+  },
 ]
 
 const router = new VueRouter({

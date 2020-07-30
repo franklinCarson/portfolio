@@ -4,7 +4,7 @@
 
         <v-app-bar
                 app
-                color="black"
+                color="black lighten-2"
                 dark
         >
             <v-row>
@@ -12,7 +12,11 @@
                     <v-app-bar-nav-icon @click.stop="navButtonClicked"/>
                 </v-col>
                 <v-col>
-                    <v-toolbar-title class="pt-2 text-center">CF</v-toolbar-title>
+                    <v-toolbar-title class="pt-2 text-center">
+                        <router-link style="text-decoration: none !important;" to="/">
+                            <span style="color: white">CF</span>
+                        </router-link>
+                    </v-toolbar-title>
                 </v-col>
                 <v-col align="end">
                     <v-icon class="pt-3 pr-1" @click="contactButtonClicked">
