@@ -15,7 +15,7 @@
                     </v-row>
                     <v-row>
                         <span class="text-start headline">
-                            Few people can say their wife actually is their best friend. I'm lucky to be one of the few. We are a "dog parents", and he keeps us on our toes. Also very exciting, we are expecting! So, I guess we are also soon to be "human parents?" Either way, family is the most important thing in my life and I love all the members of mine dearly.
+                            Few people can say their wife is actually their best friend. I'm lucky to be one of those few. We are a "dog parents," and he keeps us on our toes. We are also very excited to have welcomed our new son Tommy into our family on June 23rd of this year. Family is the most important part of my life, and I love all the members of mine dearly.
                         </span>
                     </v-row>
 

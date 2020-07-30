@@ -20,7 +20,7 @@
     export default {
         name: "Nav",
         data: () => ({
-            drawer: null,
+            drawer: false,
             navItems: [
                 {
                     text: "Home",
@@ -28,26 +28,45 @@
                     linkTo: "/"
                 },
                 {
+                    text: "Experience",
+                    icon: "mdi-hail",
+                    linkTo: "/experience"
+                },
+                {
                     text: "About",
                     icon: "mdi-account-question-outline",
                     linkTo: "/about"
                 },
-                {
-                    text: "Skills",
-                    icon: "mdi-math-compass",
-                    linkTo: "/skills"
-                },
-                {
-                    text: "Why Apple?",
-                    icon: "mdi-apple",
-                    linkTo: "/whyapple"
-                },
+                // {
+                //     text: "Skills",
+                //     icon: "mdi-math-compass",
+                //     linkTo: "/skills"
+                // },
             ]
         }),
         methods: {
            toggleDrawer: function() {
                 this.drawer = !this.drawer
            }
+        },
+        created() {
+            let host = window.location.hostname;
+            switch(host) {
+                case 'apple.cfranklinconsulting.com':
+                    this.navItems.push({
+                        text: "Why Apple?",
+                        icon: "mdi-apple",
+                        linkTo: "/whyapple"
+                    });
+                    break;
+                case 'workfront.cfranklinconsulting.com':
+                    this.navItems.push({
+                        text: "Why Workfront?",
+                        icon: "",
+                        linkTo: "/whyWorkfront"
+                    });
+                    break;
+            }
         }
     }
 </script>

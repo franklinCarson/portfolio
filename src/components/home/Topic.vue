@@ -24,7 +24,7 @@
             </span>
             </v-col>
         </v-row>
-        <v-row class="pa-3 pt-0 pb-7" justify="center">
+        <v-row v-if="viewLink" class="pa-3 pt-0 pb-7" justify="center">
             <router-link
                     :to="viewLink"
                     color="link"
