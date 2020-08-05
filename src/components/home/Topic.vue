@@ -2,6 +2,7 @@
     <v-sheet
             class="mt-3 pa-3"
             color="neutral"
+            max-width="1200"
     >
         <v-row justify="center">
             <v-icon
@@ -17,7 +18,7 @@
             {{title}}
           </span>
         </v-row>
-        <v-row class="pa-3 pt-4 text-center pl-10 pr-10">
+        <v-row :class="['pa-3 pt-4 text-center text-h3', {'ml-10 mr-10':$vuetify.breakpoint.mdAndUp, 'ml-20 mr-20':$vuetify.breakpoint.xl ,'text-subtitle-1':$vuetify.breakpoint.xsOnly}]">
             <v-col>
             <span :class="{'headline': $vuetify.breakpoint.lgAndUp}">
                 {{ text }}
@@ -53,5 +54,19 @@
 </script>
 
 <style scoped>
+    .ml-20 {
+        margin-left: 5em;
+    }
 
+    .mr-20 {
+        margin-right: 5em;
+    }
+
+    .ml-25 {
+        margin-left: 10em;
+    }
+
+    .mr-25 {
+        margin-right: 10em;
+    }
 </style>

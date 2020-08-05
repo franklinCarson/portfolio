@@ -2,14 +2,16 @@
   <div class="mb-12">
     <Parallax></Parallax>
     <v-container :class="{'pa-0': $vuetify.breakpoint.xsOnly}">
-      <div :key="topic.title" v-for="topic in topics">
-        <Topic
-                :icon="topic.icon"
-                :title="topic.title"
-                :text="topic.text"
-                :view-link="topic.viewLink"
-                />
-      </div>
+      <v-row justify="center">
+        <div :key="topic.title" v-for="topic in topics">
+          <Topic
+                  :icon="topic.icon"
+                  :title="topic.title"
+                  :text="topic.text"
+                  :view-link="topic.viewLink"
+          />
+        </div>
+      </v-row>
     </v-container>
   </div>
 
@@ -31,7 +33,7 @@ export default {
       {
         icon: "mdi-hail",
         title: "Experience",
-        text: "I have managed and developed software project for almost 5 years. Find out how my experience could benefit your business.",
+        text: "I have managed and developed software projects for almost five years. Find out how my experience could benefit your business.",
         viewLink: "/experience"
       },
       {

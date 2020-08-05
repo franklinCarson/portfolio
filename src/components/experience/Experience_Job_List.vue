@@ -1,19 +1,17 @@
 <template>
-    <v-sheet style="background-color: #0D0D10; padding-top: 3em !important;"
-             class="pa-12">
+    <v-sheet style="background-color: #0D0D10">
         <Experience_Job_Section :key="job.title"
                                 v-for="job in jobs"
                                 :title="job.title"
                                 :sub-title="job.subTitle"
-                                :paragraphs="job.paragraphs"
-                                class="mb-8"/>
+                                :paragraphs="job.paragraphs"/>
     </v-sheet>
 </template>
 
 <script>
     import Experience_Job_Section from "./Experience_Job_Section";
     export default {
-        name: "Experience_Title_List",
+        name: "Experience_Job_List",
         components: {Experience_Job_Section},
         data: () => ({
             jobs: [
